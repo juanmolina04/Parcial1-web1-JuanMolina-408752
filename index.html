@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fakebook SPA</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Encabezado -->
+  <header>
+    <div class="logo">facebook</div>
+    <input type="text" placeholder="Buscar en Fakebook">
+  </header>
+
+  <div class="container">
+    <!-- Columna izquierda -->
+    <aside class="sidebar">
+      <img src="Imagenes/imagenPerfil.jpg" alt="Foto de perfil" class="profile-pic">
+      <h2 class="profile-name">Nombre Usuario</h2>
+      <ul class="profile-info">
+        <li>Información</li>
+        <li>Info</li>
+        <li>X Amigos</li>
+      </ul>
+      <div class="friends-preview">
+        <div class="friend"></div>
+        <div class="friend"></div>
+        <div class="friend"></div>
+      </div>
+      <a href="#">Ver todos</a>
+    </aside>
+
+    <!-- Contenido principal -->
+    <main>
+      <!-- Navegación de secciones -->
+      <nav>
+        <button data-section="muro" class="active">Muro</button>
+        <button data-section="info">Info</button>
+        <button data-section="photos">Photos</button>
+        <button data-section="boxes">Boxes</button>
+      </nav>
+
+      <!-- Contenedor dinámico de la SPA -->
+      <section id="content"></section>
+    </main>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
