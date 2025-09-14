@@ -20,10 +20,10 @@ const sections = {
   `,
   info: `
     <h2>Información</h2>
-    <p><strong>Nombre:</strong> Usuario Fake</p>
-    <p><strong>Ciudad:</strong> Bogotá, Colombia</p>
+    <p><strong>Nombre:</strong> Juan Sebastian</p>
+    <p><strong>Ciudad:</strong> Cali, Colombia</p>
     <p><strong>Trabajo:</strong> Desarrollador Web</p>
-    <p><strong>Estudios:</strong> Universidad Ejemplo</p>
+    <p><strong>Estudios:</strong> Universidad Unicatolica</p>
   `,
   photos: `
     <h2>Fotos</h2>
