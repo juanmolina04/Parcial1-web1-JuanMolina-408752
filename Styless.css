@@ -1,0 +1,150 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #e9ebee;
+  color: #1c1e21;
+}
+
+/* Header */
+header {
+  background-color: #3b5998;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+header .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+header input {
+  padding: 5px 10px;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  width: 200px;
+}
+
+/* Layout principal */
+.container {
+  display: grid;
+  grid-template-columns: 250px 1fr;
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Sidebar izquierda */
+.sidebar {
+  background: white;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.sidebar .profile-pic {
+  width: 100px;
+  height: 100px;
+  background: #ccc;
+  border-radius: 50%;
+  margin: 0 auto 10px auto;
+}
+
+.sidebar .profile-name {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.sidebar ul {
+  list-style: none;
+  margin-bottom: 15px;
+}
+
+.sidebar ul li {
+  margin: 5px 0;
+}
+
+.friends-preview {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.friends-preview .friend {
+  width: 50px;
+  height: 50px;
+  background: #ddd;
+  border-radius: 8px;
+}
+
+/* Navegación de secciones */
+nav {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+nav button {
+  background: #f0f2f5;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+nav button:hover {
+  background: #e4e6eb;
+}
+
+nav button.active {
+  background: #1877f2;
+  color: white;
+}
+
+/* Contenido dinámico */
+#content {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  min-height: 300px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Foto de perfil */
+.profile-pic {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto 10px auto;
+  object-fit: cover;
+}
+
+/* Galería de fotos */
+.photo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  gap: 10px;
+}
+
+.photo-grid img {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.photo-grid img:hover {
+  transform: scale(1.05);
+}
