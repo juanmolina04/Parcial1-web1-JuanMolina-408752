@@ -33,7 +33,7 @@ const sections = {
   `,
   boxes: `
     <h2>Boxes</h2>
-    <p>Aquí irían los complementos extra del perfil.</p>
+    <p>complementos extra del perfil.</p>
     <ul>
       <li>Notas</li>
       <li>Eventos</li>
